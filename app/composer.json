@@ -1,0 +1,18 @@
+{
+    "name": "example/php-fpm-otel",
+    "description": "PHP-FPM + OpenTelemetry auto-instrumentation example",
+    "type": "project",
+    "require": {
+        "slim/slim": "^4.15",
+        "slim/psr7": "^1.8",
+        "open-telemetry/sdk": "^1.12",
+        "open-telemetry/exporter-otlp": "^1.3",
+        "php-http/guzzle7-adapter": "^1.1",
+        "open-telemetry/opentelemetry-auto-slim": "^1.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": false
+        }
+    }
+}
